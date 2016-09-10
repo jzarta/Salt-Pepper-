@@ -1,0 +1,23 @@
+{
+  "name": "saltpepper",
+  "version": "1.0.0",
+  "description": "web application where people can storage their recipes ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzarta/Salt-Pepper-.git"
+  },
+  "keywords": [
+    "jz"
+  ],
+  "author": "jorge zarta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jzarta/Salt-Pepper-/issues"
+  },
+  "homepage": "https://github.com/jzarta/Salt-Pepper-#readme"
+}
