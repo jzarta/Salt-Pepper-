@@ -9,23 +9,23 @@ var Link = ReactRouter.Link;
 var hashHistory = ReactRouter.hashHistory;
 
 var initialRecipes = [{
-  name: 'Loaded Guacamole Tacos',
-  nameLink: 'LoadedGuacamoleTacos',
-  img: 'http://images.soupaddict.com/loaded-guacamole-vegetarian-tacos-3-062214.jpg',
-  ingredients: ['fresh avocados', 'black beans', 'jalapenos', 'tomatoes or tomatillos', 'corn or small flour tortillas', 'corn', 'lime', 'cilantro'],
-  source: 'http://soupaddict.com/2014/06/loaded-guacamole-vegetarian-tacos/'
+  name: '',
+  nameLink: '',
+  img: '',
+  ingredients: [''],
+  source: ''
 }, {
-  name: 'Green Curry',
-  nameLink: 'GreenCurry',
-  ingredients: ['coconut milk', 'carrots', 'onions', 'garlic', 'green curry paste', 'asparagus', 'cilantro'],
-  img: 'http://cookieandkate.com/images/2015/03/thai-green-curry-recipe-0.jpg',
-  source: 'http://cookieandkate.com/2015/thai-green-curry-with-spring-vegetables/'
+  name: '',
+  nameLink: '',
+  ingredients: [''],
+  img: '',
+  source: ''
 }, {
-  name: 'Raspberry Chocolate Tart',
-  nameLink: 'RaspberryChocolateTart',
-  ingredients: ['raspberry preserves', 'cocoa powder', 'fresh raspberries', 'coconut milk', 'almond flour'],
-  img: 'http://www.bakerita.com/wp-content/uploads/2015/06/No-Bake-Raspberry-Chocolate-Truffle-Tart-Paleo-11.jpg',
-  source: 'http://www.bakerita.com/no-bake-raspberry-chocolate-tart-paleo-vegan-gf/'
+  name: '',
+  nameLink: '',
+  ingredients: [''],
+  img: '',
+  source: ''
 }];
 
 if (window.localStorage) {
@@ -578,7 +578,7 @@ var Form = React.createClass({
         React.createElement('input', { id: 'new-source', type: 'text', placeholder: 'recipe source' }),
         React.createElement('input', { id: 'new-img', type: 'text', placeholder: 'recipe picture' }),
         React.createElement('input', { id: 'new-ingredients', type: 'text', placeholder: 'enter ingredients, separated by a comma' }),
-        React.createElement('input', { id: 'new-ingredients', type: 'text', placeholder: 'enter ingredients, separated by a comma' }),
+        React.createElement('input', { id: 'new-ingredients', type: 'text', placeholder: 'enter processes, separated by a comma' }),
         React.createElement(Button, { clickEvent: this.submit, type: 'submit', text: 'add' })
       )
     );
