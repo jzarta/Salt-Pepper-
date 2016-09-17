@@ -79,6 +79,7 @@ var RecipeRouter = React.createClass({
     var newSource = document.getElementById('new-source').value;
     var newImg = document.getElementById('new-img').value;
     var newIngredients = document.getElementById('new-ingredients').value;
+    
 
     if (!newName || !newSource || !newIngredients) {
       this.setState({
@@ -94,7 +95,7 @@ var RecipeRouter = React.createClass({
       nameLink: newName.replace(' ', ''),
       source: newSource,
       img: newImg,
-      ingredients: newIngredients      
+      ingredients: newIngredients            
     };
 
     document.getElementById('new-title').value = "";
@@ -173,7 +174,7 @@ var RecipeRouter = React.createClass({
     var changeSource = document.getElementById('change-source' + recipeName).value;
     var changeImg = document.getElementById('change-img' + recipeName).value;
     var changeIngredients = document.getElementById('change-ingredients' + recipeName).value;
-
+    
     var newNameLink = changeName.replace(' ', '');
 
     var editedRecipe = {

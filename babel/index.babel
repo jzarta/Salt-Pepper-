@@ -9,15 +9,17 @@ let initialRecipes = [
           name: '',
           nameLink: '',
           img: '',
-          ingredients: [
-            
+          ingredients: ''
+           [
+            ''
           ],
           source: ''
         },
   {
           name: '',
           nameLink: '',
-          ingredients: [
+          ingredients: '' 
+          [
             ''
           ],
           img: '',
@@ -26,7 +28,8 @@ let initialRecipes = [
   {
           name: '',
           nameLink: '',
-          ingredients: [
+          ingredients: '', 
+          [
             ''
           ],
           img: '',
@@ -81,7 +84,7 @@ const RecipeRouter = React.createClass({
     let newSource = document.getElementById('new-source').value;
     let newImg = document.getElementById('new-img').value;
     let newIngredients = document.getElementById('new-ingredients').value;
-    let newPreparation = document.getElementById('new-preparation').value;
+    
     
     if (!newName || !newSource || !newIngredients) {
       this.setState({
@@ -91,21 +94,22 @@ const RecipeRouter = React.createClass({
     }
     
     newIngredients = newIngredients.split(',');
+    newRecipe = newRecipe.split(',');
     
     let newRecipe = {
       name: newName,
       nameLink: newName.replace(' ', ''),
       source: newSource,
       img: newImg,
-      ingredients: newIngredients,
-      preparation: newPreparation
+      ingredients: newIngredients
+      
     }
     
     document.getElementById('new-title').value = "";
     document.getElementById('new-source').value = "";
     document.getElementById('new-img').value = "";
     document.getElementById('new-ingredients').value = "";
-    document.getElementById('new-preparation').value = "";
+    
     
     let newList = [];
     this.state.recipes.forEach(function(recipe) {
@@ -186,8 +190,8 @@ const RecipeRouter = React.createClass({
       nameLink: newNameLink,
       ingredients: changeIngredients.split(','),
       img: changeImg,
-      source: changeSource,
-      preparation: changePreparation.split(',')
+      source: changeSource
+      
     }
     
     let newRecipes = [];
